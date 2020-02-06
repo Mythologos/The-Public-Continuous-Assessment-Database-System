@@ -5,5 +5,7 @@ A public-facing, scrubbed version of a project concerning student assessment don
 
 This description will likely be expanded upon to be a more comprehensive explanation in the near future.
 
+Note that, for the system to function properly, certain files must be added. For example, the database.yml must be added to suit the needs of the given data pipeline.
+
 License: 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
