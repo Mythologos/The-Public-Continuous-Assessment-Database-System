@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  crn: 1
+  course_id: 1
+  course_discipline: MyString
+  faculty_name: MyString
+  pedagogy_type: MyString
+  rrk_quiz_version: 1
+  semester_offered: 1
+  year_offered: 
+
+two:
+  crn: 1
+  course_id: 1
+  course_discipline: MyString
+  faculty_name: MyString
+  pedagogy_type: MyString
+  rrk_quiz_version: 1
+  semester_offered: 1
+  year_offered: 

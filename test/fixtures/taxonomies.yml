@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  taxonomic_description: MyString
+  taxonomic_id: 1
+  taxonomic_name: MyString
+
+two:
+  taxonomic_description: MyString
+  taxonomic_id: 1
+  taxonomic_name: MyString

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>ACT Math Score:</strong>
+  <%= @student.act_math_score %>
+</p>
+
+<p>
+  <strong>ACT Score:</strong>
+  <%= @student.act_score %>
+</p>
+
+<p>
+  <strong>Ethnicity:</strong>
+  <%= @student.ethnicity %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @student.gender %>
+</p>
+
+<p>
+  <strong>Math Placement Level:</strong>
+  <%= @student.math_placement_level %>
+</p>
+
+<p>
+  <strong>NH Value:</strong>
+  <%= @student.nh_value %>
+</p>
+
+<p>
+  <strong>Research Consent?:</strong>
+  <%= @student.research_consent? %>
+</p>
+
+<p>
+  <strong>SAT Math Score:</strong>
+  <%= @student.sat_math_score %>
+</p>
+
+<p>
+  <strong>Sat score:</strong>
+  <%= @student.sat_score %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @student.student_id %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

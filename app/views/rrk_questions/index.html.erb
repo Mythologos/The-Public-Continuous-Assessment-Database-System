@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rrk Questions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Active Question?</th>
+      <th>Correct Answer</th>
+      <th>Course</th>
+      <th>Course Discipline</th>
+      <th>Incorrect Answer #1</th>
+      <th>Incorrect Answer #2</th>
+      <th>Incorrect Answer #3</th>
+      <th>Incorrect Answer #4</th>
+      <th>Incorrect Answer #5</th>
+      <th>RRK Quiz Version</th>
+      <th>Question ID</th>
+      <th>Question Text</th>
+      <th>Taxonomic ID</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rrk_questions.each do |rrk_question| %>
+      <tr>
+        <td><%= rrk_question.active_question? %></td>
+        <td><%= rrk_question.correct_answer %></td>
+        <td><%= rrk_question.course_id %></td>
+        <td><%= rrk_question.course_discipline %></td>
+        <td><%= rrk_question.incorrect_answer_1 %></td>
+        <td><%= rrk_question.incorrect_answer_2 %></td>
+        <td><%= rrk_question.incorrect_answer_3 %></td>
+        <td><%= rrk_question.incorrect_answer_4 %></td>
+        <td><%= rrk_question.incorrect_answer_5 %></td>
+        <td><%= rrk_question.rrk_quiz_version %></td>
+        <td><%= rrk_question.question_id %></td>
+        <td><%= rrk_question.question_text %></td>
+        <td><%= rrk_question.taxonomic_id %></td>
+        <td><%= link_to 'Show', rrk_question %></td>
+        <td><%= link_to 'Edit', edit_rrk_question_path(rrk_question) %></td>
+        <td><%= link_to 'Destroy', rrk_question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rrk Question', new_rrk_question_path %>

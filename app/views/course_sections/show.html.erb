@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>CRN:</strong>
+  <%= @course_section.crn %>
+</p>
+
+<p>
+  <strong>Course ID:</strong>
+  <%= @course_section.course_id %>
+</p>
+
+<p>
+  <strong>Course Discipline:</strong>
+  <%= @course_section.course_discipline %>
+</p>
+
+<p>
+  <strong>Faculty Name:</strong>
+  <%= @course_section.faculty_name %>
+</p>
+
+<p>
+  <strong>Pedagogy Type:</strong>
+  <%= @course_section.pedagogy_type %>
+</p>
+
+<p>
+  <strong>RRK Quiz Version:</strong>
+  <%= @course_section.rrk_quiz_version %>
+</p>
+
+<p>
+  <strong>Section Number:</strong>
+  <%= @course_section.section_number %>
+</p>
+
+<p>
+  <strong>Semester Offered:</strong>
+  <%= @course_section.semester_offered %>
+</p>
+
+<p>
+  <strong>Year Offered:</strong>
+  <%= @course_section.year_offered %>
+</p>
+
+<%= link_to 'Edit', edit_course_section_path(@course_section) %> |
+<%= link_to 'Back', course_sections_path %>

@@ -1,0 +1,26 @@
+<h2>Upload Mapping Page</h2>
+
+<p>
+  <%= form_tag '/mapping_uploads/upload', method: :post, controller: :data_uploaders,
+               action: 'upload_mp', multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_file', accept: :xlsx %>
+    <br>
+    <%= submit_tag 'Submit .XLSX File' %>
+  <% end %>
+</p>
+
+<p>
+  <%= link_to "Courses Data", courses_path %>
+  <br>
+  <%= link_to "Instructions Data", instructions_path %>
+  <br>
+  <%= link_to "Knowledge Topics Data", knowledge_topics_path %>
+  <br>
+  <%= link_to "KT-SLO Mappings Data", kt_slo_mappings_path %>
+  <br>
+  <%= link_to "Student Learning Outcomes Data", student_learning_outcomes_path %>
+  <br>
+  <%= link_to "Taxonomies Data", taxonomies_path %>
+</p>

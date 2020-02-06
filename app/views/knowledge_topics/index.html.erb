@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Knowledge Topics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Active Topic?</th>
+      <th>KT Area</th>
+      <th>KT ID</th>
+      <th>KT Name</th>
+      <th>KT Unit</th>
+      <th>Year Added</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @knowledge_topics.each do |knowledge_topic| %>
+      <tr>
+        <td><%= knowledge_topic.active_topic? %></td>
+        <td><%= knowledge_topic.kt_area %></td>
+        <td><%= knowledge_topic.kt_id %></td>
+        <td><%= knowledge_topic.kt_name %></td>
+        <td><%= knowledge_topic.kt_unit %></td>
+        <td><%= knowledge_topic.year_added %></td>
+        <td><%= link_to 'Show', knowledge_topic %></td>
+        <td><%= link_to 'Edit', edit_knowledge_topic_path(knowledge_topic) %></td>
+        <td><%= link_to 'Destroy', knowledge_topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Knowledge Topic', new_knowledge_topic_path %>

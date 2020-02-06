@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question ID:</strong>
+  <%= @question_topic_mapping.question_id %>
+</p>
+
+<p>
+  <strong>KT ID:</strong>
+  <%= @question_topic_mapping.kt_id %>
+</p>
+
+<%= link_to 'Edit', edit_question_topic_mapping_path(@question_topic_mapping) %> |
+<%= link_to 'Back', question_topic_mappings_path %>

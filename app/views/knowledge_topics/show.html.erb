@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Active Topic?:</strong>
+  <%= @knowledge_topic.active_topic? %>
+</p>
+
+<p>
+  <strong>Kt area:</strong>
+  <%= @knowledge_topic.kt_area %>
+</p>
+
+<p>
+  <strong>Kt:</strong>
+  <%= @knowledge_topic.kt_id %>
+</p>
+
+<p>
+  <strong>Kt name:</strong>
+  <%= @knowledge_topic.kt_name %>
+</p>
+
+<p>
+  <strong>Kt unit:</strong>
+  <%= @knowledge_topic.kt_unit %>
+</p>
+
+<p>
+  <strong>Year added:</strong>
+  <%= @knowledge_topic.year_added %>
+</p>
+
+<%= link_to 'Edit', edit_knowledge_topic_path(@knowledge_topic) %> |
+<%= link_to 'Back', knowledge_topics_path %>

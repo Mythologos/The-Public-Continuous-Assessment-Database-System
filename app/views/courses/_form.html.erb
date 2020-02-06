@@ -1,0 +1,62 @@
+<%= form_with(model: course, local: true) do |form| %>
+  <% if course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+        <% course.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :auxiliary_course_id %>
+    <%= form.number_field :auxiliary_course_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :auxiliary_course_discipline %>
+    <%= form.text_field :auxiliary_course_discipline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_id %>
+    <%= form.number_field :course_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_discipline %>
+    <%= form.text_field :course_discipline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_title %>
+    <%= form.text_field :course_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prerequisite_id_1 %>
+    <%= form.number_field :prerequisite_id_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prerequisite_discipline_1 %>
+    <%= form.text_field :prerequisite_discipline_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prerequisite_id_2 %>
+    <%= form.number_field :prerequisite_id_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prerequisite_discipline_2 %>
+    <%= form.text_field :prerequisite_discipline_2 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

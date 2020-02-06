@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Active Question?:</strong>
+  <%= @rrk_question.active_question? %>
+</p>
+
+<p>
+  <strong>Correct Answer:</strong>
+  <%= @rrk_question.correct_answer %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @rrk_question.course_id %>
+</p>
+
+<p>
+  <strong>Course Discipline:</strong>
+  <%= @rrk_question.course_discipline %>
+</p>
+
+<p>
+  <strong>Incorrect Answer 1:</strong>
+  <%= @rrk_question.incorrect_answer_1 %>
+</p>
+
+<p>
+  <strong>Incorrect Answer 2:</strong>
+  <%= @rrk_question.incorrect_answer_2 %>
+</p>
+
+<p>
+  <strong>Incorrect Answer 3:</strong>
+  <%= @rrk_question.incorrect_answer_3 %>
+</p>
+
+<p>
+  <strong>Incorrect Answer 4:</strong>
+  <%= @rrk_question.incorrect_answer_4 %>
+</p>
+
+<p>
+  <strong>Incorrect Answer 5:</strong>
+  <%= @rrk_question.incorrect_answer_5 %>
+</p>
+
+<p>
+  <strong>RRK Quiz Version:</strong>
+  <%= @rrk_question.rrk_quiz_version %>
+</p>
+
+<p>
+  <strong>Question ID:</strong>
+  <%= @rrk_question.question_id %>
+</p>
+
+<p>
+  <strong>Question Text:</strong>
+  <%= @rrk_question.question_text %>
+</p>
+
+<p>
+  <strong>Taxonomic ID:</strong>
+  <%= @rrk_question.taxonomic_id %>
+</p>
+
+<%= link_to 'Edit', edit_rrk_question_path(@rrk_question) %> |
+<%= link_to 'Back', rrk_questions_path %>

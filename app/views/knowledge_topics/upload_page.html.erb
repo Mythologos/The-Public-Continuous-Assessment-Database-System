@@ -1,0 +1,14 @@
+<h2>Upload Knowledge Topic Page</h2>
+
+<p>
+  <%= form_tag '/knowledge_topics/upload', method: :post, controller: :knowledge_topics,
+               action: :upload, multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_file', accept: :xlsx %>
+    <br>
+    <%= submit_tag 'Submit .XLSX File' %>
+  <% end %>
+</p>
+
+<p><%= link_to "Knowledge Topics Data", knowledge_topics_path %></p>

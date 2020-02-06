@@ -1,0 +1,10 @@
+<% if @invalid_id_list.present? %>
+  Names:
+  <% @invalid_id_list.each do |name| %>
+    <ul>
+      <li><%= name %></li>
+    </ul>
+  <% end %>
+<% else %>
+  The last Student Analysis file has uploaded without an ID error.
+<% end %>

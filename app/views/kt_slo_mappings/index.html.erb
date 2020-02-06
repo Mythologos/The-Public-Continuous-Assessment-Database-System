@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Kt Slo Mappings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>KT ID</th>
+      <th>SLO ID</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kt_slo_mappings.each do |kt_slo_mapping| %>
+      <tr>
+        <td><%= kt_slo_mapping.kt_id %></td>
+        <td><%= kt_slo_mapping.slo_id %></td>
+        <td><%= link_to 'Show', kt_slo_mapping %></td>
+        <td><%= link_to 'Edit', edit_kt_slo_mapping_path(kt_slo_mapping) %></td>
+        <td><%= link_to 'Destroy', kt_slo_mapping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kt Slo Mapping', new_kt_slo_mapping_path %>

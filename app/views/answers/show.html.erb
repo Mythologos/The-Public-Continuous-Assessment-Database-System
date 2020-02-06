@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Answer Given:</strong>
+  <%= @answer.answer_given %>
+</p>
+
+<p>
+  <strong>Correct?:</strong>
+  <%= @answer.correct? %>
+</p>
+
+<p>
+  <strong>CRN:</strong>
+  <%= @answer.crn %>
+</p>
+
+<p>
+  <strong>Question ID:</strong>
+  <%= @answer.question_id %>
+</p>
+
+<p>
+  <strong>Section Number:</strong>
+  <%= @answer.section_number %>
+</p>
+
+<p>
+  <strong>Student ID:</strong>
+  <%= @answer.student_id %>
+</p>
+
+<p>
+  <strong>Year Offered:</strong>
+  <%= @answer.year_offered %>
+</p>
+
+<%= link_to 'Edit', edit_answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>

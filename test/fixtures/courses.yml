@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auxiliary_course_id: 1
+  auxiliary_course_discipline: MyString
+  course_id: 1
+  course_discipline: MyString
+  course_title: MyString
+  prerequisite_id_1: 1
+  prerequisite_discipline_1: MyString
+  prerequisite_id_2: 1
+  prerequisite_discipline_2: 
+
+two:
+  auxiliary_course_id: 1
+  auxiliary_course_discipline: MyString
+  course_id: 1
+  course_discipline: MyString
+  course_title: MyString
+  prerequisite_id_1: 1
+  prerequisite_discipline_1: MyString
+  prerequisite_id_2: 1
+  prerequisite_discipline_2: 

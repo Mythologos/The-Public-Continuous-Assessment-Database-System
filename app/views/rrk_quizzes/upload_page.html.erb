@@ -1,0 +1,14 @@
+<h2>Upload RRK Quiz Page</h2>
+
+<p>
+  <%= form_tag '/rrk_quizzes/upload', method: :post, controller: :rrk_quizzes,
+               action: :upload, multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_file', options = {accept: :xlsx} %>
+    <br>
+    <%= submit_tag 'Submit RRK Quiz Information' %>
+  <% end %>
+</p>
+
+<p><%= link_to "RRK Quizzes Data", rrk_quizzes_path %></p>

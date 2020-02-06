@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Accreditation body:</strong>
+  <%= @student_learning_outcome.accreditation_body %>
+</p>
+
+<p>
+  <strong>Active Outcome?:</strong>
+  <%= @student_learning_outcome.active_outcome? %>
+</p>
+
+<p>
+  <strong>Slo description:</strong>
+  <%= @student_learning_outcome.slo_description %>
+</p>
+
+<p>
+  <strong>Slo:</strong>
+  <%= @student_learning_outcome.slo_id %>
+</p>
+
+<p>
+  <strong>Slo name:</strong>
+  <%= @student_learning_outcome.slo_name %>
+</p>
+
+<p>
+  <strong>Year added:</strong>
+  <%= @student_learning_outcome.year_added %>
+</p>
+
+<%= link_to 'Edit', edit_student_learning_outcome_path(@student_learning_outcome) %> |
+<%= link_to 'Back', student_learning_outcomes_path %>

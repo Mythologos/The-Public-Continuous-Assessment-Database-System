@@ -1,0 +1,47 @@
+<%= form_with(model: student_learning_outcome, local: true) do |form| %>
+  <% if student_learning_outcome.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student_learning_outcome.errors.count, "error") %> prohibited this student_learning_outcome from being saved:</h2>
+
+      <ul>
+        <% student_learning_outcome.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :accreditation_body %>
+    <%= form.text_field :accreditation_body %>
+  </div>
+
+  <div class="field">
+    <%= form.label :active_outcome? %>
+    <%= form.check_box :active_outcome? %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slo_description %>
+    <%= form.text_field :slo_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slo_id %>
+    <%= form.number_field :slo_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slo_name %>
+    <%= form.text_field :slo_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_added %>
+    <%= form.text_field :year_added %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Enrollments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>CRN</th>
+      <th>Course</th>
+      <th>Course Discipline</th>
+      <th>Relevant Major Participation</th>
+      <th>RRK Quiz Score</th>
+      <th>RRK Quiz Version</th>
+      <th>Section Number</th>
+      <th>Student Course Grade</th>
+      <th>Student</th>
+      <th>Year Offered</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enrollments.each do |enrollment| %>
+      <tr>
+        <td><%= enrollment.crn %></td>
+        <td><%= enrollment.course_id %></td>
+        <td><%= enrollment.course_discipline %></td>
+        <td><%= enrollment.relevant_major_participation %></td>
+        <td><%= enrollment.rrk_quiz_score %></td>
+        <td><%= enrollment.rrk_quiz_version %></td>
+        <td><%= enrollment.section_number %></td>
+        <td><%= enrollment.student_course_grade %></td>
+        <td><%= enrollment.student_id %></td>
+        <td><%= enrollment.year_offered %></td>
+        <td><%= link_to 'Show', enrollment %></td>
+        <td><%= link_to 'Edit', edit_enrollment_path(enrollment) %></td>
+        <td><%= link_to 'Destroy', enrollment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enrollment', new_enrollment_path %>

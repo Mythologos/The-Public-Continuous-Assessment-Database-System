@@ -1,0 +1,1 @@
+json.partial! "student_learning_outcomes/student_learning_outcome", student_learning_outcome: @student_learning_outcome

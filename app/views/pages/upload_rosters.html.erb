@@ -1,0 +1,18 @@
+<h2>Upload Roster Page</h2>
+
+<p>
+  <%= form_tag '/roster_uploads/upload', method: :post, controller: :data_uploaders,
+               action: 'upload_rs', multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_student_file', accept: :xlsx %>
+    <br>
+    <%= submit_tag 'Submit .XLSX File' %>
+  <% end %>
+</p>
+
+<p>
+  <%= link_to "Enrollments Data", enrollments_path %>
+  <br>
+  <%= link_to "Students Data", students_path %>
+</p>

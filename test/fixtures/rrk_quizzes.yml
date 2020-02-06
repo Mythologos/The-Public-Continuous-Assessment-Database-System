@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  active_quiz_start?: 2019-05-23 16:25:30
+  active_quiz_end?: 2019-05-23 16:25:30
+  course_id: 1
+  course_discipline: MyString
+  rrk_quiz_version: 1
+  quiz_creator: MyString
+  total_number_of_questions: 
+
+two:
+  active_quiz_start?: 2019-05-23 16:25:30
+  active_quiz_end?: 2019-05-23 16:25:30
+  course_id: 1
+  course_discipline: MyString
+  rrk_quiz_version: 1
+  quiz_creator: MyString
+  total_number_of_questions: 

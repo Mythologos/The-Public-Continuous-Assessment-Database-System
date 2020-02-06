@@ -1,0 +1,11 @@
+<h2>Error: Student IDs and Student Names Do Not Match</h2>
+
+<h4>Relevant Students:</h4>
+<p>
+<%= render partial: 'error_list', object: @invalid_id_list %>
+</p>
+<p>
+  <%= link_to "Answers Data", answers_path %>
+  <br />
+  <%= link_to "Answers Uploader", controller: 'answers', action: :upload_page %>
+</p>

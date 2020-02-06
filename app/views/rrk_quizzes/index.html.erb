@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rrk Quizzes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Active Quiz?</th>
+      <th>Course</th>
+      <th>Course Discipline</th>
+      <th>RRK Quiz Version</th>
+      <th>Quiz Creator</th>
+      <th>Total Number of Questions</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rrk_quizzes.each do |rrk_quiz| %>
+      <tr>
+        <td><%= rrk_quiz.active_quiz? %></td>
+        <td><%= rrk_quiz.course_id %></td>
+        <td><%= rrk_quiz.course_discipline %></td>
+        <td><%= rrk_quiz.rrk_quiz_version %></td>
+        <td><%= rrk_quiz.quiz_creator %></td>
+        <td><%= rrk_quiz.total_number_of_questions %></td>
+        <td><%= link_to 'Show', rrk_quiz %></td>
+        <td><%= link_to 'Edit', edit_rrk_quiz_path(rrk_quiz) %></td>
+        <td><%= link_to 'Destroy', rrk_quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rrk Quiz', new_rrk_quiz_path %>

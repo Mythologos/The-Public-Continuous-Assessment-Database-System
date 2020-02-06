@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  crn: 1
+  course_id: 1
+  course_discipline: MyString
+  relevant_major_participation: MyString
+  rrk_quiz_score: 1.5
+  rrk_quiz_version: 1
+  student_course_grade: MyString
+  student_id: 1
+  year_offered: 
+
+two:
+  crn: 1
+  course_id: 1
+  course_discipline: MyString
+  relevant_major_participation: MyString
+  rrk_quiz_score: 1.5
+  rrk_quiz_version: 1
+  student_course_grade: MyString
+  student_id: 1
+  year_offered: 

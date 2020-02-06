@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  answer_given: MyString
+  correct?: false
+  crn: 1
+  kt_id: 1
+  question_number: 1
+  student_id: 1
+  year_offered: 
+
+two:
+  answer_given: MyString
+  correct?: false
+  crn: 1
+  kt_id: 1
+  question_number: 1
+  student_id: 1
+  year_offered: 

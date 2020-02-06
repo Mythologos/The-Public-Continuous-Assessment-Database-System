@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Active quiz?:</strong>
+  <%= @rrk_quiz.active_quiz? %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @rrk_quiz.course_id %>
+</p>
+
+<p>
+  <strong>Course discipline:</strong>
+  <%= @rrk_quiz.course_discipline %>
+</p>
+
+<p>
+  <strong>Rrk quiz version:</strong>
+  <%= @rrk_quiz.rrk_quiz_version %>
+</p>
+
+<p>
+  <strong>Quiz creator:</strong>
+  <%= @rrk_quiz.quiz_creator %>
+</p>
+
+<p>
+  <strong>Total number of questions:</strong>
+  <%= @rrk_quiz.total_number_of_questions %>
+</p>
+
+<%= link_to 'Edit', edit_rrk_quiz_path(@rrk_quiz) %> |
+<%= link_to 'Back', rrk_quizzes_path %>

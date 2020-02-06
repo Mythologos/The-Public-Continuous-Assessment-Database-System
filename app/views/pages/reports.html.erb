@@ -1,0 +1,23 @@
+<h1>Continuous Assessment Database System: Reports</h1>
+<br>
+<h3>Here, based on the statistics contained within the database, static reports are generated based on
+  various constraints for each year.</h3>
+
+<h4>The current reports provided are as follows:</h4>
+<p>Full Report:</p>
+<%= button_to "Download", controller: :report_generators, action: :download_standard_report %>
+
+<br>
+
+<p>Instructor Report:</p>
+<p>Please enter the instructor's name here as it is given in the Course Sections file.</p>
+<p>
+  <%= form_tag '/reports/download_by_instructor', method: :post,
+               controller: :report_generators, action: :download_instructor_report, multipart: true do %>
+    <%= label_tag 'Name:' %>
+    <%= select_tag 'instructor_name', options_for_select(
+        CourseSection.pluck(:faculty_name).uniq.sort { |first, second| first.rpartition(' ')[-1] <=> second.rpartition(' ')[-1] }) %>
+    <br>
+    <%= submit_tag 'Download' %>
+  <% end %>
+</p>

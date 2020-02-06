@@ -1,0 +1,62 @@
+<%= form_with(model: course_section, local: true) do |form| %>
+  <% if course_section.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(course_section.errors.count, "error") %> prohibited this course_section from being saved:</h2>
+
+      <ul>
+        <% course_section.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :crn %>
+    <%= form.number_field :crn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_id %>
+    <%= form.number_field :course_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_discipline %>
+    <%= form.text_field :course_discipline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :faculty_name %>
+    <%= form.text_field :faculty_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pedagogy_type %>
+    <%= form.text_field :pedagogy_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rrk_quiz_version %>
+    <%= form.number_field :rrk_quiz_version %>
+  </div>
+
+  <div class="field">
+    <%= form.label :section_number %>
+    <%= form.number_field :section_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :semester_offered %>
+    <%= form.number_field :semester_offered %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_offered %>
+    <%= form.text_field :year_offered %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

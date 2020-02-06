@@ -1,0 +1,47 @@
+<%= form_with(model: rrk_quiz, local: true) do |form| %>
+  <% if rrk_quiz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rrk_quiz.errors.count, "error") %> prohibited this rrk_quiz from being saved:</h2>
+
+      <ul>
+        <% rrk_quiz.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :active_quiz_start? %>
+    <%= form.check_box :active_quiz? %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_id %>
+    <%= form.number_field :course_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_discipline %>
+    <%= form.text_field :course_discipline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rrk_quiz_version %>
+    <%= form.number_field :rrk_quiz_version %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quiz_creator %>
+    <%= form.text_field :quiz_creator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_number_of_questions %>
+    <%= form.text_field :total_number_of_questions %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

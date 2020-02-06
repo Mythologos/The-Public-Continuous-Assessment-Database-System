@@ -1,0 +1,82 @@
+<%= form_with(model: rrk_question, local: true) do |form| %>
+  <% if rrk_question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rrk_question.errors.count, "error") %> prohibited this rrk_question from being saved:</h2>
+
+      <ul>
+        <% rrk_question.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :active_question? %>
+    <%= form.check_box :active_question? %>
+  </div>
+
+  <div class="field">
+    <%= form.label :correct_answer %>
+    <%= form.text_field :correct_answer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_id %>
+    <%= form.number_field :course_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_discipline %>
+    <%= form.text_field :course_discipline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :incorrect_answer_1 %>
+    <%= form.text_field :incorrect_answer_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :incorrect_answer_2 %>
+    <%= form.text_field :incorrect_answer_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :incorrect_answer_3 %>
+    <%= form.text_field :incorrect_answer_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :incorrect_answer_4 %>
+    <%= form.text_field :incorrect_answer_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :incorrect_answer_5 %>
+    <%= form.text_field :incorrect_answer_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rrk_quiz_version %>
+    <%= form.number_field :rrk_quiz_version %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question_id %>
+    <%= form.number_field :question_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question_text %>
+    <%= form.text_field :question_text %>
+  </div>
+
+  <div class="field">
+    <%= form.label :taxonomic_id %>
+    <%= form.text_field :taxonomic_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

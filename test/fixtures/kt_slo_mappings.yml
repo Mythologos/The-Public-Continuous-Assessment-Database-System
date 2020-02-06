@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kt_id: 1
+  slo_id: 
+
+two:
+  kt_id: 1
+  slo_id: 

@@ -1,0 +1,27 @@
+<%= form_with(model: kt_slo_mapping, local: true) do |form| %>
+  <% if kt_slo_mapping.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(kt_slo_mapping.errors.count, "error") %> prohibited this kt_slo_mapping from being saved:</h2>
+
+      <ul>
+        <% kt_slo_mapping.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :kt_id %>
+    <%= form.number_field :kt_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slo_id %>
+    <%= form.text_field :slo_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

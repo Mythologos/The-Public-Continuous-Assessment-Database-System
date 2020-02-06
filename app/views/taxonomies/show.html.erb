@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Taxonomic description:</strong>
+  <%= @taxonomy.taxonomic_description %>
+</p>
+
+<p>
+  <strong>Taxonomic:</strong>
+  <%= @taxonomy.taxonomic_id %>
+</p>
+
+<p>
+  <strong>Taxonomic name:</strong>
+  <%= @taxonomy.taxonomic_name %>
+</p>
+
+<%= link_to 'Edit', edit_taxonomy_path(@taxonomy) %> |
+<%= link_to 'Back', taxonomies_path %>

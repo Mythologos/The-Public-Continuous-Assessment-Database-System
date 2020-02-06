@@ -1,0 +1,14 @@
+<h2>Upload Taxonomy Page</h2>
+
+<p>
+  <%= form_tag '/taxonomies/upload', method: :post, controller: :taxonomies,
+               action: :upload, multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_file', accept: :xlsx %>
+    <br>
+    <%= submit_tag 'Submit .XLSX File' %>
+  <% end %>
+</p>
+
+<p><%= link_to "Taxonomies Data", taxonomies_path %></p>

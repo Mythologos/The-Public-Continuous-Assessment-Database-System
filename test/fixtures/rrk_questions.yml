@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  active_question_end?: 2019-05-23 16:58:17
+  active_question_start?: 2019-05-23 16:58:17
+  correct_answer: MyString
+  course_id: 1
+  course_discipline: MyString
+  incorrect_answer_1: MyString
+  incorrect_answer_2: MyString
+  incorrect_answer_3: MyString
+  incorrect_answer_4: MyString
+  kt_id: 1
+  rrk_quiz_version: 1
+  question_number: 1
+  question_text: MyString
+  taxonomic_id: 
+
+two:
+  active_question_end?: 2019-05-23 16:58:17
+  active_question_start?: 2019-05-23 16:58:17
+  correct_answer: MyString
+  course_id: 1
+  course_discipline: MyString
+  incorrect_answer_1: MyString
+  incorrect_answer_2: MyString
+  incorrect_answer_3: MyString
+  incorrect_answer_4: MyString
+  kt_id: 1
+  rrk_quiz_version: 1
+  question_number: 1
+  question_text: MyString
+  taxonomic_id: 

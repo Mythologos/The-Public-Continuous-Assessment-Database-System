@@ -1,0 +1,14 @@
+<h2>Upload SLO Page</h2>
+
+<p>
+  <%= form_tag '/student_learning_outcomes/upload', method: :post, controller: :student_learning_outcomes,
+               action: :upload, multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_download', accept: :xlsx %>
+    <br>
+    <%= submit_tag 'Submit .XLSX File' %>
+  <% end %>
+</p>
+
+<p><%= link_to "Student Learning Outcomes Data", student_learning_outcomes_path %></p>

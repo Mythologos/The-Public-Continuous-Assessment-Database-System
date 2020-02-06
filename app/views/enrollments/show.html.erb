@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>CRN:</strong>
+  <%= @enrollment.crn %>
+</p>
+
+<p>
+  <strong>Course ID:</strong>
+  <%= @enrollment.course_id %>
+</p>
+
+<p>
+  <strong>Course Discipline:</strong>
+  <%= @enrollment.course_discipline %>
+</p>
+
+<p>
+  <strong>Relevant Major Participation:</strong>
+  <%= @enrollment.relevant_major_participation %>
+</p>
+
+<p>
+  <strong>RRK Quiz Score:</strong>
+  <%= @enrollment.rrk_quiz_score %>
+</p>
+
+<p>
+  <strong>RRK Quiz Version:</strong>
+  <%= @enrollment.rrk_quiz_version %>
+</p>
+
+<p>
+  <strong>Section Number:</strong>
+  <%= @enrollment.section_number %>
+</p>
+
+<p>
+  <strong>Student Course Grade:</strong>
+  <%= @enrollment.student_course_grade %>
+</p>
+
+<p>
+  <strong>Student ID:</strong>
+  <%= @enrollment.student_id %>
+</p>
+
+<p>
+  <strong>Year Offered:</strong>
+  <%= @enrollment.year_offered %>
+</p>
+
+<%= link_to 'Edit', edit_enrollment_path(@enrollment) %> |
+<%= link_to 'Back', enrollments_path %>

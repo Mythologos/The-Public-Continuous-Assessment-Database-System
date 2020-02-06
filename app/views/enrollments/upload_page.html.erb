@@ -1,0 +1,14 @@
+<h2>Upload Enrollment Page</h2>
+
+<p>
+  <%= form_tag '/enrollments/upload', method: :post, controller: :enrollments, action: :upload,
+               multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_enrollment_file', options = {accept: :xlsx} %>
+    <br>
+    <%= submit_tag 'Submit .XLSX File' %>
+  <% end %>
+</p>
+
+<p><%= link_to "Enrollments Data", enrollments_path %></p>

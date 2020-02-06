@@ -1,0 +1,2 @@
+module RrkQuizzesHelper
+end

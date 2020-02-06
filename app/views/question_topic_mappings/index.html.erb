@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Question Topic Mappings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question ID</th>
+      <th>KT ID</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @question_topic_mappings.each do |question_topic_mapping| %>
+      <tr>
+        <td><%= question_topic_mapping.question_id %></td>
+        <td><%= question_topic_mapping.kt_id %></td>
+        <td><%= link_to 'Show', question_topic_mapping %></td>
+        <td><%= link_to 'Edit', edit_question_topic_mapping_path(question_topic_mapping) %></td>
+        <td><%= link_to 'Destroy', question_topic_mapping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Question Topic Mapping', new_question_topic_mapping_path %>

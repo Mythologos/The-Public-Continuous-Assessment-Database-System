@@ -1,0 +1,52 @@
+<h1>Continuous Assessment Database System: Home</h1>
+<br>
+<h3>Welcome!</h3>
+<h4>Access our upload pages from the following list:</h4>
+
+<p> These three are multi-relation uploaders:</p>
+<ul>
+  <li><%= link_to "Mapping Uploader", controller: :pages, action: :upload_mappings %></li>
+  <li><%= link_to "Quiz & Question Uploader", controller: :pages, action: :upload_quizzes %></li>
+  <li><%= link_to "Roster Uploader", controller: :pages, action: :upload_rosters %></li>
+</ul>
+The remaining uploaders are focused on a single relation, although they may influence data in other relations:
+<ul>
+  <li><%= link_to "Answers Uploader", controller: :answers, action: :upload_page %></li>
+  <li><%= link_to "Course Sections Uploader", controller: :course_sections, action: :upload_page %></li>
+  <li><%= link_to "Courses Uploader", controller: :courses, action: :upload_page %></li>
+  <li><%= link_to "Enrollments Uploader", controller: :enrollments, action: :upload_page %></li>
+  <li><%= link_to "Instructions Uploader", controller: :instructions, action: :upload_page %></li>
+  <li><%= link_to "Knowledge Topics Uploader", controller: :knowledge_topics, action: :upload_page %></li>
+  <li><%= link_to "KT-SLO Mappings Uploader", controller: :kt_slo_mappings, action: :upload_page %></li>
+  <li><%= link_to "QT Mappings Uploader", controller: :question_topic_mappings, action: :upload_page %></li>
+  <li><%= link_to "RRK Questions Uploader", controller: :rrk_questions, action: :upload_page %></li>
+  <li><%= link_to "RRK Quizzes Uploader", controller: :rrk_quizzes, action: :upload_page %></li>
+  <li><%= link_to "Student Learning Outcomes Uploader", controller: :student_learning_outcomes, action: :upload_page %></li>
+  <li><%= link_to "Students Uploader", controller: :students, action: :upload_page %></li>
+  <li><%= link_to "Taxonomies Uploader", controller: :taxonomies, action: :upload_page %></li>
+</ul>
+</p>
+<h4>Access full lists of data from the following list:</h4>
+<p>
+  <ul>
+    <li><%= link_to "Answers Data", answers_path %></li>
+    <li><%= link_to "Course Sections Data", course_sections_path %></li>
+    <li><%= link_to "Courses Data", courses_path %></li>
+    <li><%= link_to "Enrollments Data", enrollments_path %></li>
+    <li><%= link_to "Instructions Data", instructions_path %></li>
+    <li><%= link_to "Knowledge Topics Data", knowledge_topics_path %></li>
+    <li><%= link_to "KT-SLO Mappings Data", kt_slo_mappings_path %></li>
+    <li><%= link_to "QT Mappings Data", question_topic_mappings_path %></li>
+    <li><%= link_to "RRK Questions Data", rrk_questions_path %></li>
+    <li><%= link_to "RRK Quizzes Data", rrk_quizzes_path %></li>
+    <li><%= link_to "Student Learning Outcomes Data", student_learning_outcomes_path %></li>
+    <li><%= link_to "Students Data", students_path %></li>
+    <li><%= link_to "Taxonomies Data", taxonomies_path %></li>
+  </ul>
+</p>
+<h4>Access reports from the following links:</h4>
+<p>
+  <ul>
+    <li><%= link_to "Standard Report", reports_path %></li>
+  </ul>
+</p>

@@ -1,0 +1,14 @@
+<h2>Upload KT SLO Mapping Page</h2>
+
+<p>
+  <%= form_tag '/kt_slo_mappings/upload', method: :post, controller: :kt_slo_mappings, action: :upload,
+               multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_file', accept: :xlsx %>
+    <br>
+    <%= submit_tag 'Submit .XLSX File' %>
+  <% end %>
+</p>
+
+<p><%= link_to "KT-SLO Mappings Data", kt_slo_mappings_path %></p>

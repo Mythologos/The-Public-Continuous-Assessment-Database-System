@@ -1,0 +1,47 @@
+<%= form_with(model: knowledge_topic, local: true) do |form| %>
+  <% if knowledge_topic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(knowledge_topic.errors.count, "error") %> prohibited this knowledge_topic from being saved:</h2>
+
+      <ul>
+        <% knowledge_topic.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :active_topic_end? %>
+    <%= form.check_box :active_topic? %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kt_area %>
+    <%= form.text_field :kt_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kt_id %>
+    <%= form.number_field :kt_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kt_name %>
+    <%= form.text_field :kt_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kt_unit %>
+    <%= form.text_field :kt_unit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_added %>
+    <%= form.text_field :year_added %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

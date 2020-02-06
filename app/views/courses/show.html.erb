@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auxiliary course:</strong>
+  <%= @course.auxiliary_course_id %>
+</p>
+
+<p>
+  <strong>Auxiliary course discipline:</strong>
+  <%= @course.auxiliary_course_discipline %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @course.course_id %>
+</p>
+
+<p>
+  <strong>Course discipline:</strong>
+  <%= @course.course_discipline %>
+</p>
+
+<p>
+  <strong>Course title:</strong>
+  <%= @course.course_title %>
+</p>
+
+<p>
+  <strong>Prerequisite id 1:</strong>
+  <%= @course.prerequisite_id_1 %>
+</p>
+
+<p>
+  <strong>Prerequisite discipline 1:</strong>
+  <%= @course.prerequisite_discipline_1 %>
+</p>
+
+<p>
+  <strong>Prerequisite id 2:</strong>
+  <%= @course.prerequisite_id_2 %>
+</p>
+
+<p>
+  <strong>Prerequisite discipline 2:</strong>
+  <%= @course.prerequisite_discipline_2 %>
+</p>
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>

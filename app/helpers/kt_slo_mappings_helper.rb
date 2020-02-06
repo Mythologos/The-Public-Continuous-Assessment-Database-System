@@ -1,0 +1,2 @@
+module KtSloMappingsHelper
+end

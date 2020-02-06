@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Course Sections</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>CRN</th>
+      <th>Course</th>
+      <th>Course Discipline</th>
+      <th>Faculty Name</th>
+      <th>Pedagogy Type</th>
+      <th>RRK Quiz Version</th>
+      <th>Section Number</th>
+      <th>Semester Offered</th>
+      <th>Year Offered</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @course_sections.each do |course_section| %>
+      <tr>
+        <td><%= course_section.crn %></td>
+        <td><%= course_section.course_id %></td>
+        <td><%= course_section.course_discipline %></td>
+        <td><%= course_section.faculty_name %></td>
+        <td><%= course_section.pedagogy_type %></td>
+        <td><%= course_section.rrk_quiz_version %></td>
+        <td><%= course_section.section_number %></td>
+        <td><%= course_section.semester_offered %></td>
+        <td><%= course_section.year_offered %></td>
+        <td><%= link_to 'Show', course_section %></td>
+        <td><%= link_to 'Edit', edit_course_section_path(course_section) %></td>
+        <td><%= link_to 'Destroy', course_section, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Course Section', new_course_section_path %>

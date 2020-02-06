@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Answers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Answer Given</th>
+      <th>Correct?</th>
+      <th>CRN</th>
+      <th>Question ID</th>
+      <th>Section Number</th>
+      <th>Student ID</th>
+      <th>Year Offered</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @answers.each do |answer| %>
+      <tr>
+        <td><%= answer.answer_given %></td>
+        <td><%= answer.correct? %></td>
+        <td><%= answer.crn %></td>
+        <td><%= answer.question_id %></td>
+        <td><%= answer.section_number %></td>
+        <td><%= answer.student_id %></td>
+        <td><%= answer.year_offered %></td>
+        <td><%= link_to 'Show', answer %></td>
+        <td><%= link_to 'Edit', edit_answer_path(answer) %></td>
+        <td><%= link_to 'Destroy', answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Answer', new_answer_path %>

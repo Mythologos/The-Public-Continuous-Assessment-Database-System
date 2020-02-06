@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  act_math_score: 1
+  act_score: 1
+  ethnicity: MyString
+  full_name: MyString
+  gender: MyString
+  math_placement_level: MyString
+  sat_math_score: 1
+  sat_score: 1
+  student_id: 
+
+two:
+  act_math_score: 1
+  act_score: 1
+  ethnicity: MyString
+  full_name: MyString
+  gender: MyString
+  math_placement_level: MyString
+  sat_math_score: 1
+  sat_score: 1
+  student_id: 

@@ -1,0 +1,14 @@
+<h2>Upload Instruction Page</h2>
+
+<p>
+  <%= form_tag '/instructions/upload', method: :post, controller: :instructions, action: :upload,
+               multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_file',  accept: :xlsx %>
+    <br>
+    <%= submit_tag 'Submit .XLSX File' %>
+  <% end %>
+</p>
+
+<p><%= link_to "Instructions Data", instructions_path %></p>

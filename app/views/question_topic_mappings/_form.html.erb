@@ -1,0 +1,27 @@
+<%= form_with(model: question_topic_mapping, local: true) do |form| %>
+  <% if question_topic_mapping.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(question_topic_mapping.errors.count, "error") %> prohibited this question_topic_mapping from being saved:</h2>
+
+      <ul>
+        <% question_topic_mapping.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :question_id %>
+    <%= form.text_field :question_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kt_id %>
+    <%= form.text_field :kt_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

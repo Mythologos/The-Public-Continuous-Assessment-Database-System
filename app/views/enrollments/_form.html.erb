@@ -1,0 +1,67 @@
+<%= form_with(model: enrollment, local: true) do |form| %>
+  <% if enrollment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(enrollment.errors.count, "error") %> prohibited this enrollment from being saved:</h2>
+
+      <ul>
+        <% enrollment.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :crn %>
+    <%= form.number_field :crn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_id %>
+    <%= form.number_field :course_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_discipline %>
+    <%= form.text_field :course_discipline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :relevant_major_participation %>
+    <%= form.text_field :relevant_major_participation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rrk_quiz_score %>
+    <%= form.text_field :rrk_quiz_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rrk_quiz_version %>
+    <%= form.number_field :rrk_quiz_version %>
+  </div>
+
+  <div class="field">
+    <%= form.label :section_number %>
+    <%= form.number_field :section_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_course_grade %>
+    <%= form.text_field :student_course_grade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.number_field :student_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_offered %>
+    <%= form.text_field :year_offered %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

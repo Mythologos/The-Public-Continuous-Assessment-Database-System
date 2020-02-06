@@ -1,0 +1,21 @@
+<h2>Upload Course Section Page</h2>
+
+<p>
+  <%= form_tag '/course_sections/upload', method: :post, controller: :course_sections,
+               action: :upload, multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_file', options = {accept: :xlsx} %>
+    <br>
+    <%= label_tag 'Semester Offered: ' %>
+    <%= select_tag('s_off', raw('<option>Spring</option><option>Summer</option><option>Fall</option><option>Other</option>')) %>
+    <br>
+    <%= label_tag 'Year Offered: ' %>
+    <%= number_field_tag('y_off', nil, options = { min: 2000, max: Date.today.year, step: 1 }) %>
+    <br>
+    <%= submit_tag 'Submit Course Section Information' %>
+  <% end %>
+</p>
+<p>
+  <%= link_to "Course Sections Data", course_sections_path %>
+</p>

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accreditation_body: MyString
+  active_outcome_end?: 2019-05-23 16:25:47
+  active_outcome_start?: 2019-05-23 16:25:47
+  slo_description: MyString
+  slo_id: 1
+  slo_name: MyString
+  year_added: 
+
+two:
+  accreditation_body: MyString
+  active_outcome_end?: 2019-05-23 16:25:47
+  active_outcome_start?: 2019-05-23 16:25:47
+  slo_description: MyString
+  slo_id: 1
+  slo_name: MyString
+  year_added: 

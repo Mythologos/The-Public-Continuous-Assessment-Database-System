@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Kt:</strong>
+  <%= @kt_slo_mapping.kt_id %>
+</p>
+
+<p>
+  <strong>Slo:</strong>
+  <%= @kt_slo_mapping.slo_id %>
+</p>
+
+<%= link_to 'Edit', edit_kt_slo_mapping_path(@kt_slo_mapping) %> |
+<%= link_to 'Back', kt_slo_mappings_path %>

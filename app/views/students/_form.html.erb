@@ -1,0 +1,67 @@
+<%= form_with(model: student, local: true) do |form| %>
+  <% if student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+        <% student.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :act_math_score %>
+    <%= form.number_field :act_math_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :act_score %>
+    <%= form.number_field :act_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ethnicity %>
+    <%= form.text_field :ethnicity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :math_placement_level %>
+    <%= form.text_field :math_placement_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nh_value %>
+    <%= form.text_field :nh_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :research_consent? %>
+    <%= form.text_field :research_consent? %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sat_math_score %>
+    <%= form.number_field :sat_math_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sat_score %>
+    <%= form.number_field :sat_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

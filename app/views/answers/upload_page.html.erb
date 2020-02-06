@@ -1,0 +1,17 @@
+<h2>Upload Answer Page</h2>
+
+<p>
+  <%= form_tag '/answers/upload', method: :post, controller: :answers, action: :upload, multipart: true do %>
+    <%= label_tag '.XLSX File' %>
+    <br>
+    <%= file_field_tag 'xlsx_file', options = {accept: :xlsx} %>
+    <br>
+    <%= label_tag 'Year Offered: ' %>
+    <%= number_field_tag('y_off', nil, options = { min: 2000, max: Date.today.year, step: 1 }) %>
+    <br>
+    <%= submit_tag 'Submit .XLSX File' %>
+  <% end %>
+</p>
+<p>
+<%= link_to "Answers Data", answers_path %>
+</p>
